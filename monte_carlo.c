@@ -11,7 +11,7 @@ float frandom() {
   return ret;
 }
 float mc_pi(int n)
-{float k=0;
+{int k=0;
 int i;
 for(i=1;i<=n;i++)
 {
