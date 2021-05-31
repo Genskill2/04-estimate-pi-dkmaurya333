@@ -32,7 +32,11 @@ return 4*f;
 int main(void) {
   float pi0;
   float pi1;
-  
+   int a;
+scanf("%d",&a);
+float ans=mc_pi(a);
+return ans;
+  /*
   pi0 = mc_pi(2500);
   pi1 = mc_pi(2500);
   printf("%f %f\n", pi0, pi1);
@@ -54,7 +58,7 @@ int main(void) {
       printf("Estimate with even %d iterations is %f which is not accurate enough.\n", i, pi0);
       abort();
     }
-  }
+  }*/
 }
 
 
