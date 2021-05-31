@@ -10,13 +10,31 @@ float frandom() {
   float ret = (float)q/(float)RAND_MAX;
   return ret;
 }
+float mc_pi(int n)
+{float k=0;
+for(int i=1;i<=n;i++)
+{
+float x=frandom();
+float y=frandom();
+float d=((x*x)+(y*y));
+
+
+if (d<1)
+k++;
+//printf("(%f , %f)   -- %f----%f---%f\n",x,y,k,4*(k/i),d);
+}
+float f=k/n;
+return 4*f;
+}
+
+/*
 
 int main(void) {
   float pi0;
   float pi1;
   
-  pi0 = mc_pi(25000);
-  pi1 = mc_pi(25000);
+  pi0 = mc_pi(2500);
+  pi1 = mc_pi(2500);
   printf("%f %f\n", pi0, pi1);
   
   if (pi0 == pi1) {
@@ -38,6 +56,6 @@ int main(void) {
     }
   }
 }
-
+*/
 
 
