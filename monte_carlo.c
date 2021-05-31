@@ -12,7 +12,8 @@ float frandom() {
 }
 float mc_pi(int n)
 {float k=0;
-for(int i=1;i<=n;i++)
+int i;
+for(i=1;i<=n;i++)
 {
 float x=frandom();
 float y=frandom();
@@ -23,7 +24,7 @@ if (d<=1)
 k++;
 //printf("(%f , %f)   -- %f----%f---%f\n",x,y,k,4*(k/i),d);
 }
-float f=k/n;
+float f=k/i;
 return 4*f;
 }
 
