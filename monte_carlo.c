@@ -30,17 +30,17 @@ return 4*f;
 
 
 int main(void) {
-  float pi0;
-  float pi1;
+//  float pi0;
+//  float pi1;
    int a;
 scanf("%d",&a);
 float ans=mc_pi(a);
 return ans;
-  /*
-  pi0 = mc_pi(2500);
-  pi1 = mc_pi(2500);
-  printf("%f %f\n", pi0, pi1);
   
+  //pi0 = mc_pi(2500);
+  //pi1 = mc_pi(2500);
+ // printf("%f %f\n", pi0, pi1);
+  /*
   if (pi0 == pi1) {
       printf("Two separate estimates of pi are exactly the same. This is unlikely.\n");
       abort();
