@@ -24,7 +24,7 @@ if (d>1)
 }
 float f=(i-k)/i;
 return 4*f;
-}
+}}
 
 
 
