@@ -18,13 +18,11 @@ for(i=1;i<=n;i++)
 float x=frandom();
 float y=frandom();
 float d=((x*x)+(y*y));
-
-
-if (d<=1)
-k++;
-//printf("(%f , %f)   -- %f----%f---%f\n",x,y,k,4*(k/i),d);
+if (d>1)
+{k++;
+//printf("(%f , %f)   -- %f----%f---%f\n",x,y,k,4*((i-k)/i),d);}
 }
-float f=k/i;
+float f=(i-k)/i;
 return 4*f;
 }
 
@@ -36,6 +34,7 @@ int main(void) {
    int a;
 scanf("%d",&a);
 float ans=mc_pi(a);
+//printf("%f",ans);
 return ans;
   
   //pi0 = mc_pi(2500);
