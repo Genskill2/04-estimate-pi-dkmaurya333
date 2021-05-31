@@ -19,7 +19,7 @@ float y=frandom();
 float d=((x*x)+(y*y));
 
 
-if (d<1)
+if (d<=1)
 k++;
 //printf("(%f , %f)   -- %f----%f---%f\n",x,y,k,4*(k/i),d);
 }
