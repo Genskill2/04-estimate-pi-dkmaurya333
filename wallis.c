@@ -11,5 +11,10 @@ for(float i=1;i<=n;i++)
 }
 return 2*x;}
 
-
+int main(void)
+{ int a;
+scanf("%d",&a);
+float ans=wallis_pi(a);
+return ans;
+}
 
