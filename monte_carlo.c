@@ -27,7 +27,7 @@ float f=k/n;
 return 4*f;
 }
 
-/*
+
 
 int main(void) {
   float pi0;
@@ -56,6 +56,6 @@ int main(void) {
     }
   }
 }
-*/
+
 
 
