@@ -12,13 +12,4 @@ for(float i=1;i<=n;i++)
 return 2*x;}
 
 
-int main(void) {
-int n;
- float pi;
- scanf("%d",&n);
- return (wallis_pi(n));
-
-}
-
-
 
