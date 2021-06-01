@@ -11,41 +11,24 @@ float frandom() {
   return ret;
 }
 
-float mc_pi(int n)
-{int k=0;
-int i;
-for(i=1;i<=n;i++)
-{
-float x=frandom();
-float y=frandom();
-float d=((x*x)+(y*y));
-if (d<=1)
-k++;
-}
-float f=k/n;
-return 4*f;
-}
-
-
 int main(void) {
   float pi0;
   float pi1;
-
+  
   pi0 = mc_pi(25000);
   pi1 = mc_pi(25000);
   printf("%f %f\n", pi0, pi1);
-
+  
   if (pi0 == pi1) {
       printf("Two separate estimates of pi are exactly the same. This is unlikely.\n");
       abort();
-      }
-
-  if (fabs(pi0 - pi1) > 0.05) {
+    }
+if (fabs(pi0 - pi1) > 0.05) {
       printf("Two separate estimates %f and %f are too different.\n", pi0, pi1);
       abort();
   }
 
-
+    
   for (int i=2000; i<5000; i++) {
     pi0 = mc_pi(i);
     if (!(fabs(pi0 - M_PI) < 0.4)) {
@@ -55,4 +38,38 @@ int main(void) {
   }
 }
 
-
+float mc_pi(int n){
+  float x;
+  float y;
+  int i;
+  float z;
+  int square=0;
+  int circle=0;
+  float pi;
+  
+  for(i=1;i<=n;i++){
+   
+   x=frandom();
+   y=frandom();
+   z=x*x+y*y;
+  
+   
+   if(z<=1){
+     circle+=1;
+     square+=1;
+     }
+   else{
+     square+=1;
+     
+     
+   }
+   
+   }
+ 
+ pi=(float)4*circle/square;
+ return pi;
+   
+    
+  
+  
+}
