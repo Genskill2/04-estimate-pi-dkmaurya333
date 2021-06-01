@@ -39,13 +39,6 @@ if (fabs(pi0 - pi1) > 0.05) {
 }
 
 float mc_pi(int n){
- /* float x;
-  float y;
-  int i;
-  float z;
-  int square=0;
-  int circle=0;
-  float pi;*/
   int i;
   int k=0;
   
@@ -53,24 +46,10 @@ float mc_pi(int n){
    
    float x=frandom();
   float y=frandom();
-   float d=x*x+y*y;
-  
-   
+   float d=x*x+y*y;  
    if(d<=1){
    k++;
      }
-  // else{
-     //square+=1;
-     
-     
-  // }
-   
-   //}
- 
  float pi=4*k/n;
- return pi;
-   
-    
-  
-  
+ return pi; 
 }
