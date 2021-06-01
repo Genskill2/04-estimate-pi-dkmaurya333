@@ -49,7 +49,7 @@ float mc_pi(int n){
    float d=x*x+y*y;  
    if(d<=1){
    k++;
-     }
+     }}
  float pi=4*k/n;
  return pi; 
-}}
+}
