@@ -67,7 +67,7 @@ float mc_pi(int n){
    
    }
  
- float pi=4*k/n;
+ float pi=4.0*k/n;
  return pi;
    
     
