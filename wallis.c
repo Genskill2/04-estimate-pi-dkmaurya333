@@ -23,16 +23,17 @@ int main(void) {
 
 
 float wallis_pi(int n){
-  float count=1.0;
-  int i;
-  float j;
-   for(i=1;i<=(int)n;i++){
-        j=(float)4.0*i*i/(4.0*i*i-1);
 
-        count*=j;
+  float x=1.0;
+  //int i;
+ // float j;
+   for(int i=1;i<=n;i++){
+        x*=(4.0*i*i)/((4.0*i*i)-1);
+
+      
 
   }
-   return count*2;
+   return 2*x;
 
 
 }
